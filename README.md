@@ -23,7 +23,7 @@ random_city = random.choice(catalogs)
 print(random_city['CatalogName'])
 >> TR_VAN
 ```
-Catalogs are provinces, they store various information regarding the province. We need the catalog name to search areas belonging to the province. Their ids correspond to the license plate numbers.
+Catalogs are provinces, they store various information regarding the province. We need the catalog name to search areas belonging to the province. Their ids correspond to the license plate numbers. However we use their names to find which areas belong to them.
 
 ```python
 van_areas = api.get_catalog_areas("TR_VAN")
