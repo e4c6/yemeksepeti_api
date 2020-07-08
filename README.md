@@ -1,5 +1,5 @@
 # Yemeksepeti API
-This repository containst the code for Yemeksepeti unofficial API. The project aims to help provide educators/researchers with the tools they need to gather data and demonstrate analysis methodologies with real-world datasets. The API interactions has been reverse enginereed from the mobile client. You can search provinces, areas, restaurants and get reviews for restaurants using this code.
+This repository contains code for Yemeksepeti unofficial API. The project aims to help provide educators/researchers with the tools they need to gather data and demonstrate analysis methodologies with real-world datasets. The API interactions has been reverse enginereed from the mobile client. You can search provinces, areas, restaurants and get reviews for restaurants using this code.
 
  
 # Quickstart
