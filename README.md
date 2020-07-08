@@ -64,3 +64,22 @@ print(random_review['Flavour'], random_review['Serving'], random_review['Speed']
 ```
 Reviews include their scores, date and comment text and various other information.
 
+# Data Dump
+
+* **3,536,968** records
+* Raw **1.6GB**
+* New line delimited JSON dump
+    * [Link 1](https://mega.nz/file/xiA3FYoR#PPsE10Rkpw5P5CZ6EhxOp1GJStkVgEfTiCvyzPf62uQ): Compressed with zstd (**191.5MB**)
+
+
+**Parsed Sample**: 
+
+| Comment                                              | CommentDate                 | Flavour | RestaurantDisplayName       | Serving | Speed | Status    | CommentType | AreaName              | AvgRestaurantScore | CatalogName |
+|------------------------------------------------------|-----------------------------|---------|-----------------------------|---------|-------|-----------|-------------|-----------------------|--------------------|-------------|
+| Gayet güzeldi, memnunuyetle sipariş verebilirsiniz\. | 2020\-03\-15T16:49:07\.570Z | 9       | Değer Kebap, Kurtuluş Mah\. | 9       | 10    | Onaylandı | UserComment | Uşak \(Ünalan Mah\.\) | 9,0                | TR\_USAK    |
+
+**Raw Sample**:
+
+```json
+{"Comment":"Gayet güzeldi, memnunuyetle sipariş verebilirsiniz.","CommentDate":"2020-03-15T16:49:07.570Z","Flavour":"9","RestaurantDisplayName":"Değer Kebap, Kurtuluş Mah.","Serving":"9","Speed":"10","Status":"Onaylandı","CommentType":"UserComment","AreaName":"Uşak (Ünalan Mah.)","AvgRestaurantScore":"9,0","CatalogName":"TR_USAK"}
+```
