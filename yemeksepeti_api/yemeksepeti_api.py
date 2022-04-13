@@ -190,7 +190,7 @@ class YemeksepetiApi:
                     "CatalogName": catalog,
                     "Culture": "tr-TR",
                     "PageNumber": 1,
-                    "PageRowCount": 21337,
+                    "PageRowCount": 1000,
                     "Token": self.API_TOKEN,
                 },
             }
