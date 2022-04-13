@@ -14,7 +14,7 @@ setup(
     name="yemeksepeti_api",
     version="0.0.1",
     description="Yemeksepeti unofficial API.",
-    python_requires=">=3.8",
+    python_requires=">=3.6",
     author="Mahir Tüzel",
     author_email="e4c6@dataso.me",
     license="GNU General Public License v3.0",
