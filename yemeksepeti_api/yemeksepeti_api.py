@@ -59,7 +59,7 @@ class YemeksepetiApi:
         self.API_TOKEN = None
         self.REVIEW_TOKEN = None
         self.API_CLIENT_SECRET = config.API_CLIENT_SECRET
-        self.__cfduid = None
+        self.__cf_bm = None
         self.login()
 
     def login(self, timeout=5):
@@ -80,9 +80,7 @@ class YemeksepetiApi:
             )
             review_request = self.SESSION.post(config.REVIEW_AUTH)
             self.API_TOKEN = api_request.json()["d"]["Result"]["Token"]["TokenId"]
-            self.__cfduid = (
-                api_request.headers["set-cookie"].split(";")[0].split("=")[1]
-            )
+            self.__cf_bm = api_request.headers["set-cookie"].split(";")[0].split("=")[1]
             self.REVIEW_TOKEN = review_request.json()["access_token"]
         except Exception as e:
             print("Login failed. Error message: {}".format(e))
@@ -105,7 +103,7 @@ class YemeksepetiApi:
             "user-agent": "okhttp/4.3.1",
         }
         session.headers = headers
-        session.cookies["__cfduid"] = self.SESSION.cookies["__cfduid"]
+        session.cookies["__cf_bm"] = self.SESSION.cookies["__cf_bm"]
         session.proxies = self.SESSION.proxies
         return session
 
