@@ -5,9 +5,7 @@ This repository contains code for Yemeksepeti unofficial API. The project aims t
 # Quickstart
 
 ```
-git clone https://github.com/e4c6/yemeksepeti_api && cd yemeksepeti_api
-
-pip install -r requirements
+pip install git+https://github.com/e4c6/yemeksepeti_api.git
 ```
 At this point, you're ready to use the script.
 ```python
